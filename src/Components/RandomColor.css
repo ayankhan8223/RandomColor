@@ -1,7 +1,6 @@
 .colorBlocks {
   width: 250px;
   aspect-ratio: 1;
-  opacity: 1.2;
 }
 .container {
   display: flex;
@@ -17,4 +16,126 @@
   flex-grow: 1;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+.allcolors {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+}
+.inputContainer {
+  min-width: 60%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 35px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.inputAndSlider {
+  display: flex;
+  gap: 30px;
+}
+.InputWidth {
+  width: 200px;
+}
+.generateColor {
+  width: 100%;
+  height: 50px;
+  margin-top: 15px;
+  border: none;
+  /* background-color: #fe9d00; */
+  background-color: #0385db;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.hexcolor {
+  color: #fff;
+
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+.hexcolor p {
+  margin: 0;
+  margin-top: 110px;
+  text-align: center;
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+.hexcolor p::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  opacity: 0.1;
+  border-radius: 3px;
+}
+.copy {
+  text-align: right;
+  padding: 20px;
+  color: white;
+  font-size: 15px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+.copyicon {
+  display: grid;
+  place-items: center;
+}
+.copyicon::before {
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  background-color: black;
+  opacity: 0.1;
+  z-index: -1;
+}
+.RgbHexHSLcontainer {
+  display: flex;
+  max-width: 90%;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px 0;
+}
+.Hex,
+.hsl,
+.rgb {
+  min-width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.RgbHexHSLcontainerinner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .allcolors {
+    align-items: center;
+    justify-content: center;
+  }
+  .inputContainer h3 {
+    font-size: 14px;
+  }
 }
