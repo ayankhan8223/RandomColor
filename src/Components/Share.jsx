@@ -1,5 +1,5 @@
 import "./Share.css";
-
+import bookmark from "../assets/bookmark.svg";
 const fbRedirect = () => {
   window.open(
     "https://www.facebook.com/sharer/sharer.php?u=https://www.seohorizon.com/rgb-to-hex/",
@@ -26,7 +26,7 @@ const Share = () => {
     <div className="share-container">
       <div className="bookmark">
         <h3>PRESS CTRL / CMD + D TO BOOKMARK</h3>
-        <img alt="Bookmark" src="\bookmark.svg" />
+        <img alt="Bookmark" src={bookmark} />
       </div>
 
       <div className="sharecontainer-line"></div>

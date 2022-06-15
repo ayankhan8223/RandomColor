@@ -1,10 +1,11 @@
 import React from "react";
 import "./header.css";
+import Logo from "../assets/logo-thin.png";
 
 function Header() {
   return (
     <div className="header">
-      <img className="image" alt="logo" src="\logo.png"></img>
+      <img className="image" alt="logo" src={Logo}></img>
       <ul className="list">
         <a className="link" href="https://www.seohorizon.com/">
           <li className="list-item">DEALS</li>

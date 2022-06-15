@@ -11,6 +11,7 @@ import {
   Alert,
   AlertTitle,
   Tooltip,
+  Button,
 } from "@mui/material";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import CheckIcon from "@mui/icons-material/Check";
@@ -123,9 +124,19 @@ function RandomColor() {
               }}
             />
           </div>
-          <button onClick={getColor} className="generateColor">
+          <Button
+            onClick={getColor}
+            variant="contained"
+            className="generateColor "
+            sx={{
+              marginTop: 5,
+              fontWeight: 500,
+              fontSize: "17px",
+              letterSpacing: 1,
+            }}
+          >
             Get Colors
-          </button>
+          </Button>
         </div>
         <div className="colorContainer">
           <div className="allcolors">
@@ -147,7 +158,7 @@ function RandomColor() {
                           width: "20px",
                           height: "20px",
                           color: "#7CFC00",
-                          fontWeight: 1000,
+                          fontWeight: 500,
                         }}
                       />
                     ) : (
@@ -156,7 +167,6 @@ function RandomColor() {
                           width: "20px",
                           height: "20px",
                           color: "#FFF",
-                          fontWeight: 1000,
                         }}
                       />
                     )}

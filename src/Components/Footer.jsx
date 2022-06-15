@@ -2,6 +2,9 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import "./Footer.css";
+import Logo2 from "../assets/logo-white.png";
+import facebook from "../assets/facebook.png";
+import twitter from "../assets/twitter.png";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 function Copyright() {
@@ -53,7 +56,7 @@ export default function Footer() {
                 marginRight: "16px",
               }}
             >
-              <img height="40px" src="\facebook.png" alt="" />
+              <img height="40px" src={facebook} alt="" />
               <p
                 style={{
                   padding: "16px",
@@ -74,7 +77,7 @@ export default function Footer() {
                 justifyContent: "center",
               }}
             >
-              <img height="36px" src="\twitter.png" alt="" />
+              <img height="36px" src={twitter} alt="" />
               <p
                 style={{
                   padding: "16px",
@@ -98,7 +101,7 @@ export default function Footer() {
           ></hr>
           <br />
 
-          <img height="40px" src="\logo-white.png" alt="" />
+          <img height="40px" src={Logo2} alt="" />
           <br />
           <ul
             className="footerMenu"
