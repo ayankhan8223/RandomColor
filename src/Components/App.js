@@ -1,11 +1,11 @@
-import Header from "./Components/Header.jsx";
-import Footer from "./Components/Footer.jsx";
+import Header from "./Header.jsx";
+import Footer from "./Footer.jsx";
 // import FAQ from "./FAQ/FAQ.jsx";
-import Share from "./Components/Share.jsx";
-import Content from "./Components/Content.jsx";
+import Share from "./Share.jsx";
+import Content from "./Content.jsx";
 
-import RandomColor from "./Components/RandomColor.jsx";
-import Heading from "./Components/Heading.jsx";
+import RandomColor from "./RandomColor.jsx";
+import Heading from "./Heading.jsx";
 import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
