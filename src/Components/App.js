@@ -36,7 +36,7 @@ function App() {
                   style={{ color: "black" }}
                   href="https://www.seohorizon.com/business-tools/"
                 >
-                  Business Tools
+                  Design Tools
                 </a>
               </span>
             </Link>

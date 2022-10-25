@@ -20,6 +20,11 @@
   justify-content: center;
   flex-direction: column;
 }
+.generateColor{
+background: #0385db;
+border: none;
+margin-top: 20px;
+}
 .allcolors {
   display: flex;
   flex-wrap: wrap;
@@ -113,17 +118,17 @@
   flex-direction: column;
   margin: 50px 0;
 }
-.Hex,
+/* .Hex,
 .hsl,
 .rgb {
-  min-width: 400px;
+  width: 400px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
+} */
 
 .RgbHexHSLcontainerinner {
   display: flex;
@@ -131,6 +136,51 @@
   width: 100%;
   gap: 20px;
 }
+.radioInputs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-bottom: 10px;
+}
+.inputs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.radioInputs label{
+  font-size: 18px;
+  font-weight: 600;
+}
+.radioInputs input{
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+.lumninosity,
+.hue{
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+}
+.customInputs{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-top:10px
+}
+.customInputs label{
+ font-size: 19px;
+ margin-bottom: 5px;
+}
+.customInputs select{
+width: 250px;
+height: 40px;
+padding: 7px;
+outline: none;
+}
+
 @media only screen and (max-width: 600px) {
   .allcolors {
     align-items: center;
